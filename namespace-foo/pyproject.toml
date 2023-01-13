@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools >= 61.1.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "namespace-foo"
+description = "A library for namespace-foo"
+dynamic = ["version"]
+
+[tool.setuptools.packages.find]
+include = ["foo*"]
+
